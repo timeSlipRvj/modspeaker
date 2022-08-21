@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h2 {
+    @apply text-3xl font-bold my-6 text-center;
+  }
+
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px #1f2937 inset !important;
+    -webkit-text-fill-color: #f3f4f6 !important;
+  }
+
+  .inputform {
+    @apply mb-6;
+  }
+
+  .inputform label {
+    @apply text-lg text-gray-100 font-bold ml-[0.1rem] mb-1;
+  }
+
+  button {
+    @apply bg-orange-500 cursor-pointer mr-2 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded-md;
+  }
+}
